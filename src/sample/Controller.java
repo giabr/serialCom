@@ -69,10 +69,6 @@ public class Controller{
         try {
             serialPort.openPort();
             serialPort.setParams(9600, 8, 1, 0);
-//            if (serialPort.isOpened()){
-//                loop="Port Opened" + "\n";
-//                view.setText(loop);
-//            }
             if (serialPort.isOpened()){
                 loop="Port Opened" + "\n";
                 view.setText(loop);
