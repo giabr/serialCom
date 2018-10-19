@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="709.0">
+         <children>
+            <Button fx:id="kirim" layoutX="629.0" layoutY="14.0" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="66.0" text="SEND" />
+            <Text layoutX="14.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BAUDRATE : 9600" />
+            <Button layoutX="479.0" layoutY="425.0" mnemonicParsing="false" onAction="#connect" text="CONNECT" />
+            <TextField id="inputPesan" fx:id="inputData" layoutX="14.0" layoutY="14.0" onAction="#input" prefHeight="31.0" prefWidth="605.0" promptText="Masukan disini ....." />
+            <TextArea fx:id="view" editable="false" layoutX="14.0" layoutY="54.0" prefHeight="361.0" prefWidth="682.0" />
+            <Button layoutX="386.0" layoutY="425.0" mnemonicParsing="false" onAction="#receive" text="REFRESH" />
+            <Button layoutX="584.0" layoutY="425.0" mnemonicParsing="false" onAction="#disconnect" text="DISCONNECT" />
+            <Text layoutX="14.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PORT : COM3" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
